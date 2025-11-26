@@ -1,0 +1,8 @@
+node_modules
+packages/*/node_modules
+packages/frontend
+.git
+*.md
+.env*
+dist
+*.log

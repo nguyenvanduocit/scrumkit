@@ -1,0 +1,24 @@
+{
+  "name": "@scrumkit/backend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "start": "bun run dist/index.js",
+    "loadtest": "bun loadtest/bot.ts"
+  },
+  "dependencies": {
+    "@colyseus/bun-websockets": "^0.16.5",
+    "@colyseus/core": "^0.16.24",
+    "@colyseus/schema": "^3.0.0",
+    "@scrumkit/models": "workspace:*"
+  },
+  "devDependencies": {
+    "@colyseus/loadtest": "^0.16.1",
+    "@types/bun": "^1.1.14",
+    "colyseus.js": "^0.16.22",
+    "typescript": "~5.9.3"
+  }
+}

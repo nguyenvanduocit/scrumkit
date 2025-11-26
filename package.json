@@ -1,0 +1,24 @@
+{
+  "name": "scrumkit",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pm2 delete all && pm2 start ecosystem.config.cjs",
+    "dev:frontend": "pm2 delete scrumkit-frontend && pm2 start ecosystem.config.cjs --name scrumkit-frontend",
+    "dev:backend": "pm2 delete scrumkit-backend && pm2 start ecosystem.config.cjs --name scrumkit-backend",
+    "build": "bun run --filter '*' build",
+    "stop": "pm2 stop all",
+    "logs": "pm2 logs --nostream --lines 50",
+    "status": "pm2 status",
+    "deploy": "./scripts/deploy.sh all",
+    "deploy:server": "./scripts/deploy.sh server",
+    "deploy:webapp": "./scripts/deploy.sh webapp"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "typescript": "~5.9.3"
+  }
+}
