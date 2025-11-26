@@ -2,6 +2,8 @@
 
 Real-time scrum planning poker for agile teams. Vote together, reveal together.
 
+![ScrumKit](docs/design/thumbnail.webp)
+
 ## Features
 
 - **Real-time voting** - See who has voted (not what) before reveal
