@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "pm2 delete all && pm2 start ecosystem.config.cjs",
+    "dev": "pm2 delete all; pm2 start ecosystem.config.cjs",
     "dev:frontend": "pm2 delete scrumkit-frontend && pm2 start ecosystem.config.cjs --name scrumkit-frontend",
     "dev:backend": "pm2 delete scrumkit-backend && pm2 start ecosystem.config.cjs --name scrumkit-backend",
     "build": "bun run --filter '*' build",
