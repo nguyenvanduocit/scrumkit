@@ -1,6 +1,7 @@
 import { Server } from "@colyseus/core";
 import { BunWebSockets } from "@colyseus/bun-websockets";
 import { ScrumRoom } from "./rooms/ScrumRoom";
+import { RetroRoom } from "./rooms/RetroRoom";
 
 const port = Number(process.env.PORT) || 7001;
 
@@ -12,6 +13,7 @@ const server = new Server({
 });
 
 server.define("scrum", ScrumRoom).filterBy(['roomName']);
+server.define("retro", RetroRoom).filterBy(['roomName']);
 
 server.listen(port).then(() => {
   console.log(`[Backend] Colyseus server listening on ws://localhost:${port}`);

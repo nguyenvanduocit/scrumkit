@@ -63,3 +63,10 @@ border-top-color: oklch(85% 0.12 85);
 - Light effect: `oklch(100% 0 0 / 0.1-0.25)`
 
 Components are in `packages/frontend/src/components/ui/`.
+
+## Active Technologies
+- TypeScript ~5.9.3, Bun runtime (ESNext target) + Vue 3.5, Colyseus 0.16, @colyseus/schema 3.0, Vite (Rolldown) (001-retro-room)
+- In-memory (Colyseus state) - no persistence (001-retro-room)
+
+## Recent Changes
+- 001-retro-room: Added TypeScript ~5.9.3, Bun runtime (ESNext target) + Vue 3.5, Colyseus 0.16, @colyseus/schema 3.0, Vite (Rolldown)

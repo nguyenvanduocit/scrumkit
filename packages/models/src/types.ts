@@ -36,5 +36,20 @@ export interface PlayerData {
   vote: string;
   avatar: number;
   status: PlayerStatus;
-  disconnectedAt: number;
+}
+
+// Retro room types
+export interface ItemData {
+  id: string;
+  content: string;
+  authorId: string;
+  authorName: string;
+  createdAt: number;
+}
+
+export interface ColumnData {
+  id: string;
+  title: string;
+  order: number;
+  items: Map<string, ItemData>;
 }

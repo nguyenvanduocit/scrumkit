@@ -14,6 +14,11 @@ const router = createRouter({
       component: () => import('@/views/RoomView.vue'),
     },
     {
+      path: '/retro/:roomid',
+      name: 'retro',
+      component: () => import('@/views/RetroView.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('@/views/AboutView.vue'),
